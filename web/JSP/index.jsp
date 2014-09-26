@@ -28,9 +28,9 @@
 
                 <div class="apollo-login">
 
-                    <p class="apollo-seperator"> o </p>
+                    <p class="apollo-seperator"> O </p>
 
-                    <form name="login" class="form-signin" id="apollo-login-form" method="POST">
+                    <form name="login" class="form-signin" id="apollo-login-form" method="GET">
                         <div class="control-group">
                             <input type="text" value="" class="input-block-level" name="usuario" placeholder="Usuario">
                         </div>
