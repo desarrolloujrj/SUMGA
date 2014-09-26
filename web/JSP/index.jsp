@@ -19,29 +19,21 @@
     </head>
     <body>
         <div class="apollo">
-
             <div class="apollo-container clearfix">
-
                 <div>
                     <div class="apollo-image"></div>
                 </div>
-
                 <div class="apollo-login">
-
                     <p class="apollo-seperator"> O </p>
-
                     <form name="login" class="form-signin" id="apollo-login-form" method="GET">
                         <div class="control-group">
                             <input type="text" value="" class="input-block-level" name="usuario" placeholder="Usuario">
                         </div>
-
                         <div class="control-group">
                             <input type="password" value="" class="input-block-level" name="password" placeholder="Contraseña">
                         </div>
-
                         <button class="btn btn-large btn-block btn-warning" type="submit">Iniciar Sesion</button>
                     </form>
-
                 </div>
             </div>
         </div>
