@@ -30,7 +30,7 @@
                             <input type="text" value="" class="input-block-level" name="usuario" placeholder="Usuario">
                         </div>
                         <div class="control-group">
-                            <input type="password" value="" class="input-block-level" name="password" placeholder="Contraseña">
+                            <input type="password" value="" class="input-block-level" name="contrasena" placeholder="Contraseña">
                         </div>
                         <button class="btn btn-large btn-block btn-warning" type="submit">Iniciar Sesion</button>
                     </form>
