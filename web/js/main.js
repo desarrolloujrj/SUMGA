@@ -1,3 +1,4 @@
+;
 (function () {
     var app = {
         init: function () {
@@ -229,4 +230,4 @@
             $(window).load(app.windowLoad);
         });
 
-})(jQuery);
+})(jQuery)
