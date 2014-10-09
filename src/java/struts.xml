@@ -3,7 +3,22 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <!-- Configuration for the default package. -->
+    <include file="administracion.xml"/>
     <package name="default" extends="struts-default">
+        <action name="login" class="Controller.login" >
+            <result name="input">/jsp/login.jsp</result>
+            <result name="administrador">
+                <param name="location">/</param>
+            </result>            
+            <result name="error">/JSP/login.jsp</result>
+        </action>
+        
+        <action name="metodo" class="Controller.NewClass" method="metodo">
+            <result name="success">/JSP/segunda.jsp</result>        
+        </action>
+        
+        <action name="logoutAccion" class="Controller.LogoutAction" >
+            <result name="success">/JSP/login.jsp</result>
+        </action> 
     </package>
 </struts>

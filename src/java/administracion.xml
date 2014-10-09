@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="administracion" namespace="/" extends="struts-default">
+        <!--Interceptores-->
+        <interceptors>
+            <interceptor name="sesionValida1" class="Controller.InterceptorAcceso" />
+            
+            <interceptor-stack name="defaultTimerStack1">
+                <interceptor-ref name="sesionValida1"/>
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="defaultTimerStack1" />
+        
+        <global-results>
+            <result name="login">/JSP/login.jsp</result>
+            <result name="sinpermiso">/JSP/sinPermiso.jsp</result>
+        </global-results>
+        <!--Interceptores-->
+    </package>
+</struts>

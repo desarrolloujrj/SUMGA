@@ -39,10 +39,8 @@ public class Conexion {
             password = propiedadesBD.getString("password");
             service = propiedadesBD.getString("service");
         }
-
         return DriverManager.getConnection("jdbc:mysql://" + ipAddress + ":" + service + "/" + dbName, user, password);
     }
-    
     
     public static void main(String[] args) {
         try {

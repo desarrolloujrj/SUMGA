@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+
+package Controller;
+
+import com.opensymphony.xwork2.ActionSupport;
 
 /**
  *
- * @author Jonnathan
+ * @author UrielJonnathan
  */
-public class login {
-
-    public boolean login() {
-        
-        return true;
+public class NewClass extends ActionSupport{
+    
+    public String metodo(){
+        return  SUCCESS;
     }
-
+    
 }

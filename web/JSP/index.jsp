@@ -6,8 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="/struts-tags" prefix="s" %>
+<%@page import="Beans.usuario"%>
 <% String context = request.getContextPath();%>
-
+<%if(request.getSession().getAttribute("usuario") != null){%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,24 +19,14 @@
         <title>Login</title>
     </head>
     <body>
-        <div class="apollo">
-            <div class="apollo-container clearfix">
-                <div>
-                    <div class="apollo-image"></div>
-                </div>
-                <div class="apollo-login">
-                    <p class="apollo-seperator"> O </p>
-                    <form name="login" class="form-signin" id="apollo-login-form" method="POST">
-                        <div class="control-group">
-                            <input type="text" value="" class="input-block-level" name="usuario" placeholder="Usuario">
-                        </div>
-                        <div class="control-group">
-                            <input type="password" value="" class="input-block-level" name="contrasena" placeholder="Contraseña">
-                        </div>
-                        <button class="btn btn-large btn-block btn-warning" type="submit">Iniciar Sesion</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <form id="form" name="form" action="metodo">
+            <input type="submit" value="hola"/>        
+        </form>
+        <form id="form2" name="form2" action="logoutAccion">
+            <input type="submit" value="salir"/>        
+        </form>
     </body>
 </html>
+<%}else{
+    response.sendRedirect(context);
+}%>
